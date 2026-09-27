@@ -1,0 +1,138 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "builtin",
+        "height": 15,
+        "width": 30,
+        "padding": {
+            "top": 5,
+            "left": 3
+        }
+    },
+    "modules": [
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m┌───────────────────── Hardware ─────────────────────┐"
+        },
+        {
+            "type": "pc",
+            "key": "󰌢  PC",
+            "keyColor": "green"
+        },
+        {
+            "type": "cpu",
+            "key": " › 󰻠 CPU ",
+            "keyColor": "green"
+        },
+        {
+            "type": "gpu",
+            "key": " › 󰍹 GPU ",
+            "keyColor": "green"
+        },
+        {
+            "type": "memory",
+            "key": " › ⛃ RAM ",
+            "keyColor": "green"
+        },
+        {
+            "type": "disk",
+            "key": " › 󰋊 SSD ",
+            "keyColor": "green"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m┌───────────────────── Software ─────────────────────┐"
+        },
+        {
+            "type": "os",
+            "key": " ›  OS",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "kernel",
+            "key": " › 󰌽 Kernel ",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "bios",
+            "key": " › 󰖡 BIOS ",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "packages",
+            "key": " › 󰏗 Packages ",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "shell",
+            "key": " › 󰞷 Shell ",
+            "keyColor": "yellow"
+        },
+        "break",
+        {
+            "type": "de",
+            "key": " › 󰧨 Desktop",
+            "keyColor": "blue"
+        },
+        {
+            "type": "lm",
+            "key": " › 󰍁 LM ",
+            "keyColor": "blue"
+        },
+        {
+            "type": "wm",
+            "key": " › 󱂬 Comp. ",
+            "keyColor": "blue"
+        },
+        {
+            "type": "wmtheme",
+            "key": " › 󰉦 Theme ",
+            "keyColor": "blue"
+        },
+        {
+            "type": "terminal",
+            "key": " › 󰆍 Terminal ",
+            "keyColor": "blue"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m┌────────────────────── System  ─────────────────────┐"
+        },
+        {
+            "type": "command",
+            "key": " › OS Age ",
+            "keyColor": "magenta",
+            "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+        },
+        {
+            "type": "uptime",
+            "key": " › Uptime ",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "datetime",
+            "key": " › DateTime ",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+        },
+        {
+            "type": "colors",
+            "paddingLeft": 19,
+            "symbol": "circle"
+        }
+    ]
+}
