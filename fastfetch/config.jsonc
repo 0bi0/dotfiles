@@ -51,7 +51,7 @@
         },
         {
             "type": "os",
-            "key": " ›  OS",
+            "key": " ›  OS ",
             "keyColor": "yellow"
         },
         {
@@ -77,7 +77,7 @@
         "break",
         {
             "type": "de",
-            "key": " › 󰧨 Desktop",
+            "key": " › 󰧨 Desktop ",
             "keyColor": "blue"
         },
         {
